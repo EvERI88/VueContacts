@@ -8,7 +8,7 @@ const routes = [
   { path: "/", name: "allcontats", component: AllContatsView },
   { path: "/addcontacts", name: "addcontacts", component: AddContactView },
   { path: "/about", name: "about", component: AboutView },
-  { path: "/destination/:id", component: ContactView, props: true },
+  { path: "/contacts/:idContact", name: "contact", component: ContactView},
 ];
 
 const router = createRouter({

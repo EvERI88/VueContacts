@@ -4,6 +4,8 @@ import './registerServiceWorker'
 import router from './router'
 import { createPinia } from 'pinia'
 import VueTheMask from 'vue-the-mask'
+import { useVuelidate } from '@vuelidate/core'
+
 
 const pinia = createPinia()
-createApp(App).use(router).use(pinia).use(VueTheMask).mount('#app')
+createApp(App).use(pinia).use(router).use(VueTheMask).use(useVuelidate).mount('#app')
